@@ -1,0 +1,45 @@
+div{
+
+    width: 500px;
+    height: 500px;
+    /* background-color: blue; */
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/car.svg);
+    background-size: cover;
+    /* background-clip: text; */
+    background-position: center;
+    /* background-attachment:fixed; */
+    background-repeat: no-repeat;
+
+    border: 20px solid red;
+    border-radius: 50%;
+    border-style: dotted;
+    border-width: 20px;
+    border-collapse: collapse;
+    
+    /* font-size: 100px;
+    color: transparent; */
+}
+
+table {
+    border-collapse: collapse;
+}
+
+p{
+    text-indent: 20px;
+    /* letter-spacing: 5px; */
+    word-spacing: 5px;
+    line-height: 20px;
+    text-shadow: 20px 10px 9px #d23e3e;
+    text-decoration: underline;
+    text-align: justify;
+    /* text-transform: lowercase; */
+    font-size: 20px;
+    font-family: 'impact', sans-serif;
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+a{
+    text-decoration: none;
+}
