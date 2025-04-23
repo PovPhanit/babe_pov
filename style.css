@@ -1,24 +1,4 @@
-div{
 
-    width: 500px;
-    height: 500px;
-    /* background-color: blue; */
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/car.svg);
-    background-size: cover;
-    /* background-clip: text; */
-    background-position: center;
-    /* background-attachment:fixed; */
-    background-repeat: no-repeat;
-
-    border: 20px solid red;
-    border-radius: 50%;
-    border-style: dotted;
-    border-width: 20px;
-    border-collapse: collapse;
-    
-    /* font-size: 100px;
-    color: transparent; */
-}
 
 table {
     border-collapse: collapse;
@@ -38,8 +18,78 @@ p{
     font-variant: small-caps;
     font-style: italic;
     font-weight: bold;
-    
+    color: blue;
+
 }
 a{
     text-decoration: none;
 }
+
+ul li{
+    list-style-type: none;
+}
+
+img{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.yindex{
+    z-index:100;
+}
+
+.z{
+    border: 2px solid red;
+    transform: translateX(-80px);
+    z-index: 0;
+}
+
+.container{
+   position: relative;
+}
+.box1{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    
+}
+.box2{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 150px; 
+}   
+
+
+.overflow{
+    position: relative;
+    top: 200px;
+    width: 200px;
+    height: 50px;
+    background-color: yellow;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 5px 10px 5px #cbc5c5;
+    opacity: 0.4;
+    margin-top: 50px;
+    padding: 10px;
+    display: block;
+}
+
+.position{
+    width: 100%;
+    background-color: green;
+    position: fixed;
+    top: 0;
+}
+
+
+
+
+
+
+
+
+

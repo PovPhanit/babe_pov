@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: red;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    color: white;
+}
+header nav ul{
+    display: flex;
+    gap: 13px;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+header nav ul li{
+    list-style-type: none;
+}
+
+
+
+
+.box{
+    width: 100px;
+    height:100px;
+    background-color: blue;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    /* height: 100vh; */
+    background-color: yellow;
+}
+.box1{
+    order: 2;
+    align-self: flex-start;
+    /* flex: 1; */
+    flex-grow: 2;
+
+}
+.box2{
+    order: 1;
+    flex-grow: 1;
+}
+.box3{
+    order: 4;
+    flex-grow: 3;
+    flex-basis: 200px;
+}
+.box4{
+    order: 3;
+}
+
+
+.grid{
+    background-color:pink;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+    padding: 20px;
+    justify-items:center ;
+    /* align-items: center; */
+    /* height: 100vh; */
+}
+
+@media (min-width: 640px) {
+    header nav{
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+    header nav ul{
+        display: flex;
+        font-size: 20px;
+        gap: 20px;
+    }
+    .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 760px) {
+    header nav{
+        padding: 20px 40px;
+    }
+    header nav ul{
+        font-size: 23px;
+        gap: 30px;
+    }
+    .grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    header nav{
+        padding: 20px 40px;
+    }
+    header nav ul{
+        font-size: 24px;
+        gap: 30px;
+    }
+}
+@media (min-width: 1024px) {
+    header nav{
+        padding: 20px 60px;
+    }
+    header nav ul{
+        font-size: 23px;
+        gap: 30px;
+    }
+}
+@media (min-width: 1280px) {
+    header nav{
+        padding: 20px 80px;
+    }
+    header nav ul{
+        font-size: 23px;
+        gap: 30px;
+    }
+}
