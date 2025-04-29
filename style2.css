@@ -124,11 +124,11 @@ header nav ul li{
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    /* grid-template-areas:
-        'pov1 pov1 pov3 pov4'
+    grid-template-columns: repeat(4,1);
+    grid-template-areas:
+        'pov1 pov3 pov4 pov4'
         'pov5 pov6 pov6 pov6'
-        'pov5 pov2 pov2 pov2'; */
+        'pov2 pov2 pov2 pov2';
     grid-gap: 10px;
     background-color: lightgreen;
     padding: 10px;
@@ -141,7 +141,7 @@ header nav ul li{
     font-size: 30px;
     color: white;
 }
-/* 
+
 .item1{
     grid-area: pov1;
 }
@@ -159,7 +159,7 @@ header nav ul li{
 }
 .item6{
     grid-area: pov6;
-} */
+}
 
 @media (min-width: 640px) {
     header nav{
@@ -216,5 +216,166 @@ header nav ul li{
         gap: 30px;
     }
 }
+
+
+
+
+.responsive{
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: flex-end;
+    background-color: red;
+}
+.res{
+    /* display: flex; */
+    gap: 15px;
+    display: none;
+}
+@media (min-width: 640px) {
+    .responsive{
+        justify-content: space-between;
+    }
+    .res{
+        display: flex;
+    }
+}
+.flex-container div {
+    background-color: green;
+    width: 40px;
+    height: 40px;   
+}
+
+.flex-container3{
+    
+}
+
+.flex-container3 div{
+    background-color: green;
+    width: 40px;
+    height: 40px;   
+}
+
+
+.trans{
+    margin: 20px;
+    /* transform: translatex(300px); */
+    /* transform: translate(100px,100px); */
+    /* transform: scale(0.5); */
+    /* transform: rotate(90deg); */
+    /* transform: skewx(-45deg); */
+
+    /* transition-duration: 2s;
+    transition-delay: 2s;
+    transition-timing-function: linear;
+    transition-property: all;
+    transition: all 2s linear 0s; */
+
+    /* animation-name: runner;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+    animation-play-state:paused; */
+
+    /* animation: runner 4s linear 0s infinite alternate-reverse forwards runni/ng; */
+    animation: runner 4s linear infinite;
+}
+
+/* .trans:hover{
+    animation-play-state: running;
+} */
+@keyframes runner{
+   0%{
+        transform: translate(0px);
+    }
+    100%{
+        transform: translate(200px);
+    }
+    /* 50%{
+        transform: translate(200px,200px);       
+    }
+    75%{
+        transform: translate(0px,200px);       
+    }
+    100%{
+        transform: translate(0px);       
+    } */
+    
+}
+
+
+
+
+
+
+.trans:hover{
+    transform: scale(1.5);
+    background-color:red;
+}
+
+/* pseudo */
+
+
+.transs:hover{
+    background: red;
+}
+
+.transs:active{
+    transform: scale(1.5);
+}
+
+.transs{
+    position: relative;
+}
+.transs::after{
+    width: 10px;
+    content: "";
+    height: 10px;
+    position: absolute;
+    top: 0;
+    background-color: red;
+}
+
+.navi{
+    text-decoration: none;
+    color: blue;
+    background-color: yellow;
+}
+
+
+
+.nava::after{
+    content: "Hello";
+}
+
+
+
+p::after{
+    content: "Hello";
+    background-color: red;
+}
+
+p::before{
+    content: "Before";
+    background-color: yellow;
+}
+
+p::first-letter{
+    background-color: red;
+}
+p::first-line{
+    background-color: blue;
+}
+p::selection{
+    background-color: yellow;
+    color: red;
+}
+input:focus{
+    background-color: yellow;
+    color: red;
+}
+
 
 
